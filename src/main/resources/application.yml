@@ -1,0 +1,15 @@
+---
+environment: prod
+user:
+  firstName: James
+  lastName: Gosling
+---
+environment: stage
+user:
+  firstName: Rod
+  lastName: Johnson
+---
+environment: dev
+user:
+  firstName: Joshua
+  lastName: Bloch
