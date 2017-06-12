@@ -21,7 +21,7 @@ Lambda configuration properties can be set in your `application.yml` file. Below
 for the lambda function:
 
 ```.properties
-environment: # lambda function environment (one of: dev, stage, prod)
+environment: # environment in which the lambda function is executing (dev, stage or prod)
 user:
   firstName: # first name for given environment
   lastName: # last name for given environemnt
@@ -30,4 +30,4 @@ user:
 ## Usage
 
 Build the project and create the lambda function by uploading the *.zip* deployment package using the [AWS Management Console](https://aws.amazon.com/console/)
-or the [AWS CLI](https://aws.amazon.com/cli/). Setup the lambda function [environment variable](http://docs.aws.amazon.com/lambda/latest/dg/env_variables.html) key-value pair. 
+or the [AWS CLI](https://aws.amazon.com/cli/). Setup the lambda function `LAMBDA_ENVIRONMENT` [environment variable](http://docs.aws.amazon.com/lambda/latest/dg/env_variables.html) key-value pair. 
