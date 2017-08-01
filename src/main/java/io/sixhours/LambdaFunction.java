@@ -10,12 +10,12 @@ import io.sixhours.service.Service;
  *
  * @author Igor Bolic
  */
-public class LambdaFunction implements RequestHandler<Void, String> {
+public class LambdaFunction implements RequestHandler<String, String> {
 
     private final Service service = DefaultService.instance;
 
     @Override
-    public String handleRequest(Void input, Context context) {
+    public String handleRequest(String input, Context context) {
 
         return service.fullName();
     }
