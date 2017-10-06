@@ -42,7 +42,5 @@ dependencies {
     compile 'com.amazonaws:aws-lambda-java-core:1.1.0'
     compile 'org.yaml:snakeyaml:1.18'
 
-    provided 'org.projectlombok:lombok:1.16.18'
-
     testCompile 'junit:junit:4.12'
 }
